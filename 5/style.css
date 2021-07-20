@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    box-sizing: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    position: absolute;
+    z-index: 100;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 900;
+}
