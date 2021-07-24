@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     background-color: #3492e4;
     display: flex;
@@ -12,6 +12,10 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
+}
+
+h1 {
+    margin: 10px 0 0 0;
 }
 
 .cup {
@@ -31,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .remain {

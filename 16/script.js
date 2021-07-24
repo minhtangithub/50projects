@@ -28,7 +28,7 @@ function updateCups(i) {
 } 
 
 function updateBigCup(i) {
-    const toralHeight = bigCup.style.height;
+    const toralHeight = 330;
     const toralCups = 8;
     const cupFilled = document.querySelectorAll('.sm.active').length;
     const percentHeight = cupFilled*toralHeight/toralCups;
