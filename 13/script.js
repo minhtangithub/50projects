@@ -20,6 +20,7 @@ function createTags(text) {
         return choice.trim();
     })
 
+// chu y dong nay 
     tags.innerHTML = '';
 
     choices.forEach(function(choice) {
