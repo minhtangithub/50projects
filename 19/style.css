@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #fff;
+    --content: #000;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    color: var(--content);
+    position: relative;
+    transition: all 0.5s ease-in;
+}
+
+.dark {
+    --bg: #000;
+    --content: #fff;
+}
+
+button:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--content);
+    color: var(--bg);
+    padding: 8px 12px;
+    position: absolute;
+    top: 100px;
+    border-radius: 4px;
+    border: none;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.needle {
+    position: absolute;
+    background-color: var(--content);
+    width: 3px;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+}
+
+.hour {
+    height: 65px;
+    transform: translate(-50%, -100%) rotate(30deg);
+}
+
+.minute {
+    height: 100px;
+    transform: translate(-50%, -100%) rotate(45deg);
+}
+
+.second {
+    height: 100px;
+    background-color: #e74c3c;
+    transform: translate(-50%, -100%) rotate(60deg);
+
+}
+
+.center {
+    width: 10px;
+    height: 10px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: var(--content);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.time {
+    font-size: 60px;
+    color: var(--content);
+    transition: all 0.5s;
+}
+
+.date {
+    color: #aaa;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+span {
+    background-color: var(--content);
+    color: var(--bg);
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    line-height: 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
