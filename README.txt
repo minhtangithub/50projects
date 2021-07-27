@@ -2,3 +2,4 @@
 10 (**)
 random choice (chỗ ' ')
 20 (X, x, Y, y)
+21 (tai sao phai preventdefault ? )
