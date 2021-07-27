@@ -6,3 +6,5 @@ random choice (chỗ ' ')
 21 (tai sao phai preventdefault ? )
 22(**)(canvas)
 23 (tg delay)
+24 (hong có gì khó, làm tốn tg)
+25 (chỉ cần để ý scrollY với offsetheight là được, khi window.srcollY > (offsetheight + 150) thì active
