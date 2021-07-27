@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;    
+}
+
+i {
+    color: red;
+}
+
+.container {
+    width: 800px;
+    height: 420px;
+    box-shadow: 1px 1px 10px #000;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+.container i {
+    position: absolute;
+    color: red;
+    animation: grow linear 0.5s;
+    z-index: 1;
+}
+
+@keyframes grow {
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(10);
+    }
+}
+
